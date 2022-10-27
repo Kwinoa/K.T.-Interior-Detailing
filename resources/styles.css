@@ -1,0 +1,441 @@
+/* Universla Styling */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* Header Section */
+
+header .title-section{
+    position: fixed;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 10;
+    border-bottom: 2px solid white;
+    width: 100%;
+    flex-flow: row;
+    height: auto;
+    max-height: 4rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Moves nav to the right */
+}
+
+header .title-section img {
+    height: 2.75rem;
+    margin: 1.25rem;
+}
+
+header .title-section .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.75rem;
+}
+
+header .nav-section {
+    margin: 1.5rem;
+    line-height: 2;
+}
+
+header .nav-section li {
+    display: inline;
+    padding: 0 1.5rem 0 1.5rem;
+    font-size: 1.125rem;
+}
+
+.nav-section a:hover {
+    color:rgb(50, 73, 179)
+}
+
+@media only screen and (max-width:975px) {
+    .logo h1 {
+        display:none;
+    }
+
+    header .title-section img {
+        height: 3em;
+        width: auto;
+    }
+    
+    header .nav-section li {
+        font-size: 1.15rem;
+        padding: 0 1rem 0 1rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    header .nav-section li {
+        font-size: 1rem;
+        padding: 0 0.75rem 0 0.75rem;
+    }
+
+    header .title-section {
+        padding: 0.075rem;
+    }
+}
+
+/* About Us Section */
+
+#mission-section {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    line-height: 1.7;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)), url("./images/20220802_172834.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60rem;
+    padding: 4rem 0 4rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#mission-section h2 {
+    font-size: 3.5rem;
+    margin-top: 5rem;
+}
+
+#mission-section p {
+    font-size: 1.75rem;
+    font-weight: lighter;
+    width: 80%;
+}
+
+@media only screen and (max-width:890px) {
+    #mission-section {
+        height: 45rem;
+    }
+
+    #mission-section p {
+        width: 70%;
+        font-size: 1.5rem;
+    }
+
+    #mission-section h2 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    #mission-section p {
+        font-size: 1.375rem;
+    }
+}
+
+/* Services Section */
+
+#services-section {
+    margin-top: 6rem;
+}
+
+#services-section h2 {
+    color: black;
+    font-size: 3.5rem;
+}
+
+#services-section h3 {
+    font-weight: lighter;
+    font-size: 1.25rem;
+}
+
+#services-section .services-item {
+    height: 24rem;
+    margin: 2rem;
+    margin-top: 4rem; 
+    width: 18rem;
+    max-width: 20rem;
+    border: 5px solid rgb(55 70 131);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    transition-timing-function: ease; 
+    flex-shrink:1;
+    flex-grow: 1;
+}
+
+.services-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.services-item .description{
+    color: white;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10.25rem;
+    background-color: rgba(22, 30, 62, 0.675);
+    padding: 1rem 0 1rem 0;
+}
+
+#services-section .services-item:hover {
+    border: 5px solid rgb(55, 70, 131);
+    border-radius: 15px;
+    box-shadow: 7px 7px 5px grey;
+    transition-duration: 0.3s;
+    transform: scale(1.05); 
+}
+
+.vacuum {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./images/pexels-mike-b-244819.jpg);
+}
+
+.plastic {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./images/pexels-malte-luk-1412213.jpg);
+}
+
+.glass {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./images/mujahid-kabae-8Xjkn9cFDIw-unsplash.jpg);
+}
+
+.seatbelt {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./images/giorgio-trovato-vZk9_-ggGSw-unsplash.jpg);
+}
+
+.leather {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./images/pexels-mike-b-1633602.jpg);
+}
+
+.protection {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./images/brock-wegner-pWGUMQSWBwI-unsplash.jpg);
+}
+
+@media only screen and (max-width:890px) {
+    #services-section .services-item {
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+
+    #services-section h2 {
+        font-size: 3rem;
+    }
+}
+
+/* About Me Section */
+
+#about-me-section {
+    margin-top: 6rem;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(81, 81, 81));
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+
+.about-me-container {
+    padding-top: 2rem;
+}
+
+#about-me-section h2 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.kalina-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.profile {
+    height: 20rem;
+    width: 15rem;
+    border: 6px solid white;
+    border-radius: 12px;
+
+}
+
+.description-kalina {
+    text-align: center;
+    line-height: 1.6;
+    width: 50%;
+}
+
+.description-kalina h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.description-kalina p {
+    padding-top: 1rem;
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width:890px) {
+
+    #about-me-section h2{
+        font-size: 3rem;
+    }
+
+    .description-kalina h3 {
+        font-size: 1.5rem;
+    }
+
+    .description-kalina p {
+        font-size: 1rem;
+        line-height: 2.2;
+    }
+}
+
+@media only screen and (max-widtH: 700px) {
+
+    .kalina-container {
+        flex-flow: column;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .profile {
+        margin-bottom: 2rem;
+        height: 15rem;
+        width: 11rem;
+    }
+
+    .description-kalina {
+        width: 70%;
+        line-height: 2.2;
+    }
+}
+
+/* Contacts Section */
+
+#contact-section {
+    margin: 6rem 0 6rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#contact-section .location {
+    height: 22rem;
+    width: auto;
+    max-width: 95%;
+    border-radius: 10px; 
+    z-index:100; 
+    cursor: pointer; 
+    transition-property: all; 
+    transition-duration: 0.3s; 
+    transition-timing-function: ease; 
+    flex-shrink: 1;
+    flex-grow: 2;
+}
+
+#contact-section .location:hover {
+    transform: scale(1.25); 
+}
+
+.contact-container ul {
+    padding-top: 1rem;
+}
+
+#contact-section h2 {
+    color: black;
+    font-size: 3.5rem;
+}
+
+.contact-container .contact-item {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.contact-item a {
+    padding-left: .5rem;
+    color: black;
+    font-size: 1rem;
+    display: inline-flex;
+    line-height: 3;
+}
+
+.contact-item a:hover {
+    color: rgb(50 70 179);
+}
+
+.contact-item img {
+    height: 2rem;
+    width: auto;
+}
+
+@media only screen and (max-width: 890px) {
+    #contact-section {
+        flex-flow: column;
+    }
+
+    .contact-container {
+        padding-top: 2.5rem;
+    }
+
+    #contact-section h2 {
+        font-size: 3rem;
+    }
+
+    .contact-item a {
+        font-size: 0.75rem
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #contact-section .location:hover {
+        transform: scale(1.1); 
+    }
+
+    #contact-section .location {
+        height: 14.5rem;
+    }
+
+    #contact-section h2 {
+        font-size: 2.1rem;
+    }
+}
+
+/* Footer Section */
+
+section footer {
+    background-color: black; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h4 {
+    font-size: .75rem;
+    color: rgba(255, 255, 255, 0.532);
+    letter-spacing: 1px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.532)
+}
