@@ -1,5 +1,5 @@
-/* Universla Styling */
- 
+/* Universal Styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -262,8 +262,8 @@ header .nav-section li {
 }
 
 .profile {
-    height: 20rem;
-    width: 15rem;
+    height: 16rem;
+    width: 16rem;
     border: 6px solid white;
     border-radius: 12px;
 
@@ -312,7 +312,7 @@ header .nav-section li {
     .profile {
         margin-bottom: 2rem;
         height: 15rem;
-        width: 11rem;
+        width: 15rem;
     }
 
     .description-kalina {
